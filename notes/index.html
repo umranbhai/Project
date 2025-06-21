@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nots</title>
+</head>
+
+<body>
+
+    <h1>Notes in Javascript</h1>
+
+    <p>Notes are a way to store information in a structured format. In JavaScript, we can use objects or arrays to
+        create notes.</p>
+
+    <h2>Creating a Note</h2>
+
+    <ul>
+        <h3>variable</h3>
+        <li><code>var,let xyz = 1-number,"1"-string,ture||false-boolean,[1,2,3]-Arrays,{name:"nabil"; age: 24;-object},Null,Undefined</code>
+        </li>
+        <li><code>const ABC = 1 (define value in a constant)</code></li>
+    </ul>
+    <ul>
+        <h3>Operators</h3>
+        <li>
+            <code>Arithmetic (+,-,=,/,*,**)</code>
+        </li>
+        <li>
+            <code>Comparison Operators <br> (== equal to),<br> (=== equal value and equal type),<br> (!= not equal),<br> (!== note equal value and type),<br> (> greater than),<br> (< less than),<br> (>= greater than or equal to),<br> (<= less than or equal to) </code>
+        </li>
+        <li>
+            <code>Logical Operators <br>
+               ( &&	and	(x < 10 && y > 1) is true), <br> (||	or	(x == 5 || y == 5) is false koibhi ek value ture honi chahiye	), <br> (!	not	!(x == y) is true)
+            </code>
+        </li>
+        <li>
+            <code>Conditional (Ternary) Operator <br>
+                (condition) ? expression1 : expression2 <br>
+                Example: (age >= 18) ? "Adult" : "Minor" <br>
+                var age = 19; <br>
+
+                var old = (age >= 20) ? "you  are megar" : "you  are minor";<br>
+
+                document.querySelector("h1").innerText = old;<br>
+            </code>
+        </li>
+
+        <li>
+            <code>if Statement <br>
+                var age = 19; <br>
+                let old; <br>
+                if (age >= 20) { <br>
+                    old = "you are megar"; <br>
+                } else { <br>
+                    old = "you are minor"; <br>
+                } <br>
+                document.querySelector("h1").innerText = old; <br>
+            </code>
+        </li>
+
+        <li>
+            <code>switch Statement <br>
+            var age = 19; <br>
+            let old; <br>
+            switch (age) { <br>
+                case 19: <br>
+                    old = "you are 19"; <br>
+                    break; <br>
+                case 20: <br>
+                    old = "you are 20"; <br>
+                    break; <br>
+                default: <br>
+                    old = "you are not 19 or 20"; <br>
+            } <br> 
+            document.querySelector("h1").innerText = old; <br>
+        </code>
+        </li>
+
+        <li>
+            <code>
+               Loops <br>
+               for (let i = 0; i < 5; i++) { <br>
+                console.log(i); <br>
+               } <br>
+               while (condition) { <br>
+                // code to be executed <br>
+               } <br>
+               do { <br>
+                // code to be executed <br>
+               } while (condition); <br>
+
+               <h4>for Loops</h4>
+               for (let i = 0; i <= 10; i++) { <br>
+               let number = i + ","; <br>
+               document.querySelector("h1").innerText += number; <br>
+
+                <h4>while Loop</h4>
+               let i = 0; <br>
+               while (i < 5) { <br>
+                   console.log("Number hai: " + i); <br>
+                   i++;  // i ko 1 se badha rahe hain har baar <br>
+               } <br>
+               
+                <h4>for in loop ({} ke liye he)</h4><br>
+                for (let key in object) { <br>
+                 // yeh code har key ke liye chalega <br>
+                } <br>
+ 
+                let person = { <br>
+                    name: "Nabil", <br>
+                    age: 24, <br>
+                    course: "BCA" <br>
+                }; <br> 
+                for (let key in person) { <br>
+                    console.log(key + ": " + person[key]); <br>
+                } <br>
+
+                <h4>for of loop ([] ke liye he)</h4><br>
+                for (let value of array) { <br>
+                 // yeh code har value ke liye chalega <br>
+                } <br>
+                let numbers = [1, 2, 3, 4, 5]; <br>
+                for (let number of numbers) { <br>
+                    console.log(number); <br>
+                } <br>
+
+                let name = "Rahul"; <br>
+                for (let char of name) { <br>
+                    console.log(char); <br>
+                } <br>
+                R <br>
+                a <br>
+                h <br>
+                u <br>
+                l <br>
+                <h4>(%) Modulus operator with for loop and if and else</h4>
+                for (let i = 0; i < 10; i++) { <br>
+                if (i % 2 === 0) { <br>
+                    document.querySelector("h1").innerText = "even number"; <br>
+                } else { <br>
+                    document.querySelector("h1").innerText = "odd number"; <br>
+                } <br>
+               } <br>
+           </code>
+        </li><br>
+        <li>
+            <code>
+                Functions Declaration<br>
+                <h4>Function</h4>
+                function functionName(parameters) { <br>
+                    // code to be executed <br>
+                } <br>
+                functionName(arguments); <br>
+
+                Example: <br>
+                function add(a, b) { <br>
+                    return a + b; <br>
+                } <br>
+                let result = add(5, 10); <br>
+                console.log(result); // Output: 15 <br>
+
+                <h4>Arrow Functions:</h4> <br>
+                const add = (a, b) => a + b; <br>
+                let result = add(5, 10); <br>
+                console.log(result); // Output: 15 <br>
+
+            </code><br><br>
+        </li>
+        <li>
+            <code>
+                dom manipulation<br>
+                <h4>get element pakdo:</h4>
+                let heading = document.getElementById("title"); <br>
+                let para = document.getElementsByClassName("info"); <br>
+                let p = document.querySelector(".info"); <br>
+                let p = document.querySelectorAll(".info"); <br><br>
+
+
+                HTML change karna	element.innerHTML = "..." <br>
+                heading.innerHTML = "h1 Nabil Shaikh /h1";  // element change <br><br>
+                Text read / update	element.textContent / innerText <br>
+                heading.textContent = "Namaste Duniya!";  // text change <br><br>
+                Style change	element.style.property = "value" <br>
+                heading.style.color = "red";             // color change <br><br>
+
+                Event lagana (click etc.)	element.addEventListener("click", func) <br>
+                heading.addEventListener("click", function() { <br>
+                    alert("Heading clicked!"); <br>
+                }); <br><br>
+
+                <h4></h4>
+
+             </code>
+        </li>
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
