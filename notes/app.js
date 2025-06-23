@@ -42,3 +42,17 @@
 // const add = (a, b) => a + b;
 // let result = add(5, 10);
 // console.log(result); // Output: 1
+
+// for (var a = 0; a < 100; a += 10) {
+//     console.log(a);
+//     for (var b = 0; b < a + 10; b++) {
+//         console.log(b);
+//     };
+// };
+
+// for (var a = 0; a < 5; a++) {
+//     for (var b = 1; b <= a; b++) {
+//         console.log(b);
+//     }
+//     console.log("");
+// };

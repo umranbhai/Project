@@ -143,6 +143,14 @@
                     document.querySelector("h1").innerText = "odd number"; <br>
                 } <br>
                } <br>
+                <h4>Loop nesting</h4>
+
+                for (var a = 0; a < 5; a++) {<br>
+                for (var b = 1; b <= a; b++) { <br>
+                console.log(b);<br>
+         }
+                console.log("");<br>
+                };<br>
            </code>
         </li><br>
         <li>
@@ -190,9 +198,62 @@
                     alert("Heading clicked!"); <br>
                 }); <br><br>
 
-                <h4></h4>
 
              </code>
+        </li>
+    </ul>
+
+    <ul>
+        <h2>Arrays and Objects Methods</h2>
+        <li>
+            <h3>Methods [map, filter, reduce, find, forEach, sort]</h3>
+            <ul>
+                <li>forEach</li>
+                <code>
+                    var ary = [1, 2, 3, 4, "nabil", 6, 7, 8, 9, 10]; <br>
+
+                   ary.forEach(function (item, index) { <br>
+                   console.log(item, index); <br>
+                   }); <br>
+
+                
+                   var ary = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br>
+                   let newAry = [];<br>
+                   ary.forEach(num => newAry.push(num * 2));<br>
+                   console.log(newAry);<br>
+                </code><br>
+                <li>map</li>
+                <code>
+                    var ary = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                    function double(num) {
+                        return num * 2;
+                    };
+                    let newAry = ary.map(double);
+                    console.log(newAry); // Output: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+                </code><br><br>
+                <li>find</li>
+                <code>
+                   var ary = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br>
+                   var x = 5;<br>
+                   let found = ary.find(num => num === x);<br>
+                   console.log(found);<br>
+                </code><br>
+                <li>findIndex</li>
+                <code>
+                    var ary = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br>
+                    var x = 5;<br>
+                    let found = ary.findIndex(num => num === x);<br>
+                    console.log(found);<br>
+                </code><br>
+                <li>findIndex</li>
+                <code>
+                    var ary = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br>
+                    var x = 5;<br>
+                    let found = ary.findIndex(num => num === x);<br>
+                    console.log(found);<br>
+                </code>
+
+            </ul>
         </li>
     </ul>
 
