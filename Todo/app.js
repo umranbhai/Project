@@ -14,26 +14,26 @@ let list = document.getElementById("list");
 // });
 
 
-// addButton.addEventListener('click', function () {
-//     if (input.value.trim() !== "") {
-//         let li = document.createElement("li");
-//         li.textContent = input.value;
+addButton.addEventListener('click', function () {
+    if (input.value.trim() !== "") {
+        let li = document.createElement("li");
+        li.textContent = input.value;
 
-//         let deleteButton = document.createElement("button");
-//         deleteButton.textContent = "Delete";
+        let deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
 
-//         deleteButton.addEventListener("click", function () {
-//             list.removeChild(li);
-//         });
+        deleteButton.addEventListener("click", function () {
+            list.removeChild(li);
+        });
 
-//         li.appendChild(deleteButton);
-//         list.appendChild(li);
+        li.appendChild(deleteButton);
+        list.appendChild(li);
 
-//         input.value = ""; // Clear the input field
-//     } else {
-//         alert("Please enter a todo item.");
-//     }
-// })
+        input.value = ""; // Clear the input field
+    } else {
+        alert("Please enter a todo item.");
+    }
+})
 
 
 // addButton.addEventListener('click', function () {
