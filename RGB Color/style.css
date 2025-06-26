@@ -1,0 +1,15 @@
+.colorBox {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 15px;
+
+}
+
+#colorCode {
+    font-family: monospace;
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #333;
+}
