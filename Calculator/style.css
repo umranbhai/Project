@@ -1,0 +1,23 @@
+.cal-button {
+    padding: 2px;
+    border: 1px solid;
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.input-button {
+    padding: 2px;
+    border: 1px solid;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.cal-button:hover {
+    background-color: orangered;
+}

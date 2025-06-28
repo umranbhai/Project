@@ -1,6 +1,12 @@
 let colorCode = document.getElementById("colorCode");
-let randomColor = null;
 let colorBoxes = document.getElementById("colorOption")
+let score = 0;
+let randomColor = null;
+
+// This is a simple RGB color guessing game.
+// The player has to guess the correct RGB color code from a set of randomly generated colors.
+// Function to generate a random number between min and max (inclusive)
+// This function is used to generate random RGB values for the color boxes.
 
 function GenerateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -14,13 +20,28 @@ function generateColor() {
 
 }
 
+function incrementScore() {
+    score++;
+    document.getElementById("score").innerText = score;
+}
+
+
 function validateResult(el) {
     let selectedColor = el.target.style.backgroundColor;
-    console.log(selectedColor === randomColor);
+    if (selectedColor === randomColor) {
+        incrementScore();
+    } else {
+        score = null;
+    };
+
+    startGame();
+
 
 }
 
 function startGame() {
+    colorBoxes.innerHTML = null // Clear previous color boxes
+
     randomColor = generateColor();
     colorCode.innerText = randomColor;
 
@@ -32,6 +53,8 @@ function startGame() {
         div.style.backgroundColor = i == randomIndex ? randomColor : generateColor();
         div.classList.add("colorBox");
         colorBoxes.appendChild(div);
+
+
     };
 
 };
