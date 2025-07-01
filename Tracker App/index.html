@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker App</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h2>Expense Tracker</h2>
+        <div id="balance">Balance: ₹0</div>
+        <div class="summary">
+            <div>Income: ₹<span id="income">0</span></div>
+            <div>Expense: ₹<span id="expense">0</span></div>
+        </div>
+
+
+        <h3>Add New Transaction</h3>
+        <form id="form">
+            <input type="text" id="text" placeholder="Enter description" value="nabil" />
+            <input type="number" id="amount" placeholder="Enter amount (positive/income, negative/expense)"
+                value="44" />
+            <button type="submit" id="button">Add Transaction</button>
+        </form>
+        <ul id="transactions"></ul>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
